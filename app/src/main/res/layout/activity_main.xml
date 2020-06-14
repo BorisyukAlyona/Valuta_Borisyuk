@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2A3E3EC"
+    android:padding="@android:dimen/app_icon_size"
+    android:paddingStart="@android:dimen/app_icon_size"
+    android:paddingLeft="@android:dimen/app_icon_size"
+    android:paddingTop="@android:dimen/app_icon_size"
+    android:paddingEnd="@android:dimen/app_icon_size"
+    android:paddingRight="@android:dimen/app_icon_size"
+    android:paddingBottom="@android:dimen/app_icon_size"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Конвертация курсов валют"
+            android:textAlignment="center"
+            android:textColor="#131111"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:text="Введите  сумму:"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="#10C3DA"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/button_counter"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="#A27AEA"
+            android:text="Перевести в доллары"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#E771FB"
+            android:text="Перевести в рубли"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Результат:"
+            android:textColor="#090909"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewer"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#10C3DA"
+            android:textColor="#0C0C0C"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
